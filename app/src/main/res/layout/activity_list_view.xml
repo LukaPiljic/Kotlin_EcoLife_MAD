@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/eco_background">
+
+    <TextView
+        android:id="@+id/tvObsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/eco_log_obs_title"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/eco_green_dark"
+        android:gravity="center"
+        android:padding="20dp" />
+
+    <include layout="@layout/listview_header" />
+
+    <ListView
+        android:id="@+id/lvObservations"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/eco_green_light"
+        android:dividerHeight="1dp" />
+
+    <TextView
+        android:id="@+id/tvObsEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/log_obs_empty"
+        android:textSize="14sp"
+        android:textColor="@color/eco_green"
+        android:gravity="center"
+        android:padding="32dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnObsBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_back"
+        android:backgroundTint="@color/eco_green"
+        android:layout_gravity="center"
+        android:layout_margin="16dp" />
+
+</LinearLayout>
